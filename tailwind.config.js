@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
       },
-      fontSize: { tiny: '.625rem' },
+      fontSize: { tiny: '.625rem', '1.5xl': ['22px', '26px'] },
       lineHeight: {
         12: '3rem',
         14: '4.25rem',
@@ -24,9 +24,6 @@ module.exports = {
         secondary: '#FFB201',
         //'neutral-50': '#fafafa', //commented out as it is default value
         //'neutral-100': '#f5f5f5', //commented out as it is default value
-      },
-      scale: {
-        105: '1.05',
       },
     },
   },
