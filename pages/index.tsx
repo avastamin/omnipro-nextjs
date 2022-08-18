@@ -19,7 +19,9 @@ const Home: NextPage = () => {
           scrambled it to make a type specimen book. It has survived not only
           five centuries
         </p>
-        <Button>START DOING CPD THE RIGHT WAY</Button>
+        <Button className="text-1.5xl h-[69px] px-8">
+          START DOING CPD THE RIGHT WAY
+        </Button>
       </div>
     </Layout>
   );

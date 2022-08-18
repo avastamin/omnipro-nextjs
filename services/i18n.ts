@@ -7,12 +7,18 @@ const resources = {
   en: {
     translation: {
       nav: {
-        existingCustomer: 'Existing customer?',
-        pricing: 'Pricing',
-        api: 'API',
-        company: 'Company',
-        signin: 'Sign in',
-        signup: 'Sign up',
+        courses: 'Courses',
+        blog: 'Blog',
+        about: 'About',
+        speakForUs: 'Speak for us',
+        contact: 'Contact',
+        joinCpdClub: 'Join CPD Club',
+        existingCustomer: 'Existing customer?', //check it's usability
+        pricing: 'Pricing', //check it's usability
+        api: 'API', //check it's usability
+        company: 'Company', //check it's usability
+        signin: 'Sign in', //check it's usability
+        signup: 'Sign up', //check it's usability
       },
       auth: {
         signIn: {

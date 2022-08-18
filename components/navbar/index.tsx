@@ -2,10 +2,17 @@ import { Fragment, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
 import { useTranslation } from 'react-i18next';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import {
+  MenuIcon,
+  XIcon,
+  SearchIcon,
+  UserIcon,
+} from '@heroicons/react/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
 import ThemeSelector from '../ThemeSelector';
+import CPDStoreLogo from '../../public/CPD-Store-Logo.png';
+import Button from '@components/common/Button';
 
 function Navbar() {
   const { t } = useTranslation();
@@ -24,14 +31,11 @@ function Navbar() {
 
   return (
     <header
-      className={clsx(
-        'shadow-md shadow-slate-900/5 dark:border-b dark:border-slate-700 transition duration-500 dark:shadow-none',
-        {
-          'dark:bg-gray-dark dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-800':
-            isScrolled,
-          'dark:bg-transparent ': !isScrolled,
-        }
-      )}
+      className={clsx(' transition duration-500', {
+        'dark:bg-gray-dark dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-800':
+          isScrolled,
+        'dark:bg-transparent ': !isScrolled,
+      })}
     >
       <Popover className="relative bg-white dark:bg-gray-dark">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-4 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
@@ -39,11 +43,13 @@ function Navbar() {
             <Link href="/">
               <a>
                 <span className="sr-only">siteLogo</span>
-                <div className="h-14 sm:h-20 w-24 sm:w-32 relative">
+                <div className="relative w-52 h-20">
                   <Image
-                    src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
+                    src={CPDStoreLogo}
                     alt="reSpeak Logo"
                     layout="fill"
+                    width="195px"
+                    height="69px"
                   />
                 </div>
               </a>
@@ -56,36 +62,51 @@ function Navbar() {
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <Link href="/pricing">
+          <Popover.Group
+            as="nav"
+            className="hidden md:flex space-x-10 items-center"
+          >
+            <Link href="/courses">
               <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
-                {t('nav.pricing')}
+                {t('nav.courses')}
               </a>
             </Link>
-            <Link href="/app/api">
+            <Link href="/blog">
               <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
-                {t('nav.api')}
+                {t('nav.blog')}
               </a>
             </Link>
-            <Link href="/company">
+            <Link href="/about">
               <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
-                {t('nav.company')}
+                {t('nav.about')}
+              </a>
+            </Link>
+            <Link href="/speak-for-us">
+              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                {t('nav.speakForUs')}
+              </a>
+            </Link>
+            <Link href="/contact">
+              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                {t('nav.contact')}
+              </a>
+            </Link>
+            <Link href="/search">
+              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                <SearchIcon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            </Link>
+            <Link href="/login">
+              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                <UserIcon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            </Link>
+            <Link href="/join-cpd-club">
+              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                <Button className=" px-4 py-1">{t('nav.joinCpdClub')}</Button>
               </a>
             </Link>
           </Popover.Group>
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <Link href="/app/sign-in">
-              <a className="whitespace-nowrap text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
-                {t('nav.signin')}
-              </a>
-            </Link>
-            <Link href="/app/sign-up">
-              <a className="ml-8 whitespace-nowrap dark:text-white inline-flex items-center bg-gradient-to-r from-purple-600 to-indigo-600 justify-center bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">
-                {t('nav.signup')}
-              </a>
-            </Link>
-            <ThemeSelector className="relative z-10 ml-4" />
-          </div>
         </div>
 
         <Transition
