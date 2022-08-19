@@ -7,7 +7,7 @@ interface Props {
 
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="antialiased text-gray-500 dark:text-custom-dark">
+    <div className="antialiased text-body-dark dark:text-custom-dark">
       <Navbar />
       <main className="min-h-[75vh] py-1 px-4 sm:px-0">{children}</main>
       <Footer />

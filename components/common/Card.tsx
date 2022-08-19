@@ -16,7 +16,7 @@ export default function Card({
   link,
 }: IProps) {
   return (
-    <div className="group relative max-w-sm border border-neutral-100 hover:shadow-3xl">
+    <div className="group relative max-w-sm border border-neutral-100 hover:shadow-3xl hover:cursor-pointer">
       <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
         <img
           src={imageSrc}
@@ -26,7 +26,7 @@ export default function Card({
       </div>
       <div className="py-10 px-9">
         <div>
-          <SectionTitle>{title}</SectionTitle>
+          <SectionTitle className="uppercase">{title}</SectionTitle>
           <p className="mt-2.5 mb-10 text-lg text-body-dark">
             {content.length > 100
               ? content.substring(0, 96).concat('...')

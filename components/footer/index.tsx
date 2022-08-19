@@ -37,7 +37,7 @@ function Footer() {
                 {footerNavigation.support.map((item) => (
                   <li key={item.name}>
                     <Link href={item.href}>
-                      <a className="text-base text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                      <a className="text-base text-body-dark dark:text-custom-dark hover:text-gray-900">
                         {t(`footer.navItems.support.${item.name}`)}
                       </a>
                     </Link>
@@ -54,7 +54,7 @@ function Footer() {
                 {footerNavigation.company.map((item) => (
                   <li key={item.name}>
                     <Link href={item.href}>
-                      <a className="text-base text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                      <a className="text-base text-body-dark dark:text-custom-dark hover:text-gray-900">
                         {t(`footer.navItems.company.${item.name}`)}
                       </a>
                     </Link>
@@ -70,7 +70,7 @@ function Footer() {
                 {footerNavigation.legal.map((item) => (
                   <li key={item.name}>
                     <Link href={item.href}>
-                      <a className="text-base text-gray-500 dark:text-custom-dark hover:text-gray-900">
+                      <a className="text-base text-body-dark dark:text-custom-dark hover:text-gray-900">
                         {t(`footer.navItems.legal.${item.name}`)}
                       </a>
                     </Link>
@@ -83,7 +83,7 @@ function Footer() {
             <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-400 dark:text-custom-dark">
               {t('footer.subscribe.title')}
             </h3>
-            <p className="mt-4 text-base text-gray-500 dark:text-custom-dark">
+            <p className="mt-4 text-base text-body-dark dark:text-custom-dark">
               {t('footer.subscribe.content')}
             </p>
             <form className="mt-4 sm:flex sm:max-w-md">

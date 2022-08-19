@@ -6,6 +6,38 @@ import Button from '@components/common/Button';
 import Card from '@components/common/Card';
 import { useTranslation } from 'react-i18next';
 
+const posts = [
+  {
+    id: 1,
+    title: 'INVIDUNT UT LABORE ET DOLORE MAGNA',
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: 'image alt goes here',
+    link: '#',
+  },
+  {
+    id: 2,
+    title: 'Lorem Ipsum is simply dummy text',
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg',
+    imageAlt: 'image alt goes here',
+    link: '#',
+  },
+  {
+    id: 3,
+    title: 'Where can I get some?',
+    content:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look ev",
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg',
+    imageAlt: 'image alt goes here',
+    link: '#',
+  },
+];
 const Home: NextPage = () => {
   const { t } = useTranslation();
   return (
@@ -23,7 +55,19 @@ const Home: NextPage = () => {
         <Button className="text-1.5xl h-[69px] px-8">
           START DOING CPD THE RIGHT WAY
         </Button>
-        <div className="my-16 mx-16">
+        <div className="my-16 mx-16 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+          {posts.map((post) => {
+            return (
+              <Card
+                key={post.id}
+                title={post.title}
+                content={post.content}
+                imageSrc={post.imageSrc}
+                imageAlt={post.imageAlt}
+                link={post.link}
+              />
+            );
+          })}
           <Card
             title="INVIDUNT UT LABORE ET DOLORE MAGNA"
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."

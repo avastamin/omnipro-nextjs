@@ -57,7 +57,7 @@ function Navbar() {
           </div>
           <div className="-mr-2 -my-2 md:hidden flex items-center">
             <ThemeSelector className="relative z-10 mr-4" />
-            <Popover.Button className="bg-white dark:bg-custom-blue rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-white dark:bg-custom-blue rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-body-dark hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
@@ -67,42 +67,42 @@ function Navbar() {
             className="hidden md:flex space-x-10 items-center"
           >
             <Link href="/courses">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 {t('nav.courses')}
               </a>
             </Link>
             <Link href="/blog">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 {t('nav.blog')}
               </a>
             </Link>
             <Link href="/about">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 {t('nav.about')}
               </a>
             </Link>
             <Link href="/speak-for-us">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 {t('nav.speakForUs')}
               </a>
             </Link>
             <Link href="/contact">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 {t('nav.contact')}
               </a>
             </Link>
             <Link href="/search">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 <SearchIcon className="h-6 w-6" aria-hidden="true" />
               </a>
             </Link>
             <Link href="/login">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 <UserIcon className="h-6 w-6" aria-hidden="true" />
               </a>
             </Link>
             <Link href="/join-cpd-club">
-              <a className="text-base font-medium text-gray-500 dark:text-custom-dark hover:text-gray-900">
+              <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
                 <Button className=" px-4 py-1">{t('nav.joinCpdClub')}</Button>
               </a>
             </Link>
@@ -134,7 +134,7 @@ function Navbar() {
                   </div>
 
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white dark:bg-custom-blue rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="bg-white dark:bg-custom-blue rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-body-dark hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -165,7 +165,7 @@ function Navbar() {
                       {t('nav.signup')}
                     </a>
                   </Link>
-                  <p className="mt-6 text-center text-base font-medium text-gray-500 ">
+                  <p className="mt-6 text-center text-base font-medium text-body-dark ">
                     {t('nav.existingCustomer')}
                     <Link href="/app/sign-in">
                       <a className="text-gray-900 dark:text-white">
