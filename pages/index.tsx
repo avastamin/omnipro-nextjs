@@ -3,6 +3,7 @@ import { Layout } from '@components/layout';
 import { MainTitle } from '@components/common/MainTitle';
 import { SectionTitle } from '@components/common/SectionTitle';
 import Button from '@components/common/Button';
+import Card from '@components/common/Card';
 import { useTranslation } from 'react-i18next';
 
 const Home: NextPage = () => {
@@ -22,6 +23,15 @@ const Home: NextPage = () => {
         <Button className="text-1.5xl h-[69px] px-8">
           START DOING CPD THE RIGHT WAY
         </Button>
+        <div className="my-16 mx-16">
+          <Card
+            title="INVIDUNT UT LABORE ET DOLORE MAGNA"
+            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut…"
+            imageSrc="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+            imageAlt="Image alt goes here"
+          />
+        </div>
       </div>
     </Layout>
   );

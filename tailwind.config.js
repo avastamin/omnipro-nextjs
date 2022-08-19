@@ -16,6 +16,9 @@ module.exports = {
         12: '3rem',
         14: '4.25rem',
       },
+      boxShadow: {
+        '3xl': '0px 10px 50px #00000029',
+      },
       colors: {
         'body-dark': '#2B2B2B',
         'omni-slate-light': '#4C6E86',
