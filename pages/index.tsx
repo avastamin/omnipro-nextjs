@@ -26,10 +26,17 @@ const Home: NextPage = () => {
         <div className="my-16 mx-16">
           <Card
             title="INVIDUNT UT LABORE ET DOLORE MAGNA"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut…"
+            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             imageSrc="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
             imageAlt="Image alt goes here"
+            link="#"
+          />
+          <Card
+            title="Lorem Ipsum is simply dummy text"
+            content="Lorem Ipsum has been the industry."
+            imageSrc="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+            imageAlt="Image alt goes here"
+            link="#"
           />
         </div>
       </div>
