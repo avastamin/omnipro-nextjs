@@ -52,9 +52,21 @@ const Home: NextPage = () => {
           scrambled it to make a type specimen book. It has survived not only
           five centuries
         </p>
-        <Button className="text-1.5xl h-[69px] px-8">
-          START DOING CPD THE RIGHT WAY
-        </Button>
+        <div className="relative space-x-2">
+          <Button size="small" className="uppercase">
+            Checkout
+          </Button>
+          <Button size="medium" className="uppercase">
+            Checkout
+          </Button>
+          <Button size="large" className="uppercase">
+            Checkout
+          </Button>
+          <Button size="large" className="uppercase">
+            START DOING CPD THE RIGHT WAY
+          </Button>
+        </div>
+
         <div className="my-16 mx-16 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {posts.map((post) => {
             return (

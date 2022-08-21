@@ -103,7 +103,9 @@ function Navbar() {
             </Link>
             <Link href="/join-cpd-club">
               <a className="text-base font-medium text-body-dark dark:text-custom-dark hover:text-gray-900">
-                <Button className=" px-4 py-1">{t('nav.joinCpdClub')}</Button>
+                <Button className="px-8 py-1.5 font-medium">
+                  {t('nav.joinCpdClub')}
+                </Button>
               </a>
             </Link>
           </Popover.Group>
