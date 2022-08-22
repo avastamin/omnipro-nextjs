@@ -63,17 +63,19 @@ const resources = {
       terms: { title: 'Terms' },
       footer: {
         navItems: {
-          support: {
-            title: 'Support',
-            Pricing: 'Pricing',
-            Documentation: 'Documentation',
-            API: 'API',
+          explore: {
+            title: 'Explore',
+            Home: 'Home',
+            Courses: 'Courses',
+            Support: 'Support',
+            'CPD Club': 'CPD Club',
           },
-          company: {
-            title: 'Company',
-            About: 'About',
-            Partners: 'Partners',
-            Contact: 'Contact',
+          contact: {
+            title: 'Contact',
+            address:
+              'OmniPro Limited 20-22 Wenlock Road London, England N1 7GU',
+            tel: 'T: +44 (0) 20 3582 6965',
+            email: 'e: info@cpdstore.co.uk',
           },
           legal: {
             title: 'Legal',
